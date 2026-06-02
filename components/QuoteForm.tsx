@@ -42,10 +42,19 @@ export default function QuoteForm() {
   const current = steps[step];
   const progress = ((step + 1) / steps.length) * 100;
 
-  const handleNext = () => {
+  const handleNext = async () => {
     if (step < steps.length - 1) {
       setStep(step + 1);
     } else {
+      try {
+        await fetch("/api/quote", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        });
+      } catch (e) {
+        console.error("Submit error:", e);
+      }
       setSubmitted(true);
     }
   };
