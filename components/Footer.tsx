@@ -8,7 +8,7 @@ export default function Footer() {
       </div>
       <div className="bg-[#0f2235] text-[#8ab0cc] px-6 py-8 text-center text-xs leading-relaxed">
         <p>Your Future Protection | Independent Life Insurance Brokerage</p>
-        <p className="mt-1">Phone: (917) 270-3167 | Email: info@yourfutureprotection.com</p>
+        <p className="mt-1">Phone: (917) 270-3167 | Email: yfpsupport@gmail.com</p>
         <p className="mt-3">This website is for informational purposes only. Products and availability may vary by state. This is not an offer of insurance. Your Future Protection is an independent brokerage and is not affiliated with any single insurance carrier.</p>
       </div>
     </footer>
