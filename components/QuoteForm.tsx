@@ -1,11 +1,18 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 
-const steps = [
+const baseSteps = [
   { title: "What best describes you?", subtitle: "This helps us find the right plans for your situation", field: "profile", type: "select", options: ["Truck Driver / CDL", "Veteran / Military", "Homeowner (Mortgage Protection)", "Senior (60+)", "Whole Life"] },
   { title: "Check plans in your area", subtitle: "Enter your zipcode to see what you may qualify for", field: "zipcode", type: "text", placeholder: "Enter your 5-digit zipcode" },
   { title: "What are you looking for?", subtitle: "Select what matters most to you", field: "interest", type: "select", options: ["Mortgage Protection", "Life Insurance (Whole Life)", "Final Expense / Burial Coverage", "IUL - Tax-Free Cash Growth", "Not Sure - Help Me Decide"] },
+];
+
+const mortgageStep = { title: "How much do you have remaining on your mortgage?", subtitle: "An estimate is fine", field: "mortgage_remaining", type: "select", options: ["$25,000 - $50,000", "$50,000 - $100,000", "$100,000 - $250,000", "$250,000 - $500,000", "$500,000+"] };
+
+const iulStep = { title: "How much are you looking to invest monthly?", subtitle: "This helps us find the right IUL structure for your goals", field: "iul_investment", type: "select", options: ["$100 - $250", "$250 - $500", "$500 - $1,000", "$1,000+"] };
+
+const remainingSteps = [
   { title: "What is your date of birth?", subtitle: "This helps us find age-appropriate plans", field: "dob", type: "date", placeholder: "" },
   { title: "What is your gender?", subtitle: "Rates may vary based on gender", field: "gender", type: "select", options: ["Male", "Female"] },
   { title: "Do you currently use tobacco?", subtitle: "Used in the last 12 months", field: "tobacco", type: "select", options: ["No", "Yes"] },
@@ -20,6 +27,17 @@ export default function QuoteForm() {
   const [step, setStep] = useState(0);
   const [formData, setFormData] = useState<Record<string, string>>({});
   const [submitted, setSubmitted] = useState(false);
+
+  const steps = useMemo(() => {
+    const s = [...baseSteps];
+    if (formData.interest === "Mortgage Protection") {
+      s.push(mortgageStep);
+    } else if (formData.interest === "IUL - Tax-Free Cash Growth") {
+      s.push(iulStep);
+    }
+    s.push(...remainingSteps);
+    return s;
+  }, [formData.interest]);
 
   const current = steps[step];
   const progress = ((step + 1) / steps.length) * 100;
