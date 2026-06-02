@@ -1,6 +1,6 @@
 const steps = [
   { num: "1", title: "Answer a Few Questions", desc: "Takes less than 2 minutes. Basic info to help find plans that fit your needs." },
-  { num: "2", title: "Cameron Shops For You", desc: "As an independent broker, Cameron compares options from multiple top-rated carriers to find your best fit." },
+  { num: "2", title: "We Shop For You", desc: "As an independent brokerage, we compare options from multiple top-rated carriers to find your best fit." },
   { num: "3", title: "Choose Your Plan", desc: "Review your options and pick the coverage that works for your budget. No pressure, no obligation." },
 ];
 
