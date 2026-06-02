@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 const steps = [
-  { title: "What best describes you?", subtitle: "This helps us find the right plans for your situation", field: "profile", type: "select", options: ["Truck Driver / CDL", "Veteran / Military", "Homeowner (Mortgage Protection)", "Senior (60+)", "Family Provider", "Other"] },
+  { title: "What best describes you?", subtitle: "This helps us find the right plans for your situation", field: "profile", type: "select", options: ["Truck Driver / CDL", "Veteran / Military", "Homeowner (Mortgage Protection)", "Senior (60+)", "Whole Life"] },
   { title: "Check plans in your area", subtitle: "Enter your zipcode to see what you may qualify for", field: "zipcode", type: "text", placeholder: "Enter your 5-digit zipcode" },
   { title: "What are you looking for?", subtitle: "Select what matters most to you", field: "interest", type: "select", options: ["Mortgage Protection", "Life Insurance (Whole Life)", "Final Expense / Burial Coverage", "IUL - Tax-Free Cash Growth", "Not Sure - Help Me Decide"] },
   { title: "What is your date of birth?", subtitle: "This helps us find age-appropriate plans", field: "dob", type: "date", placeholder: "" },
