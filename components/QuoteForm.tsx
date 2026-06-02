@@ -10,7 +10,7 @@ const baseSteps = [
 
 const mortgageStep = { title: "How much do you have remaining on your mortgage?", subtitle: "An estimate is fine", field: "mortgage_remaining", type: "select", options: ["$25,000 - $50,000", "$50,000 - $100,000", "$100,000 - $250,000", "$250,000 - $500,000", "$500,000+"] };
 
-const iulStep = { title: "How much are you looking to invest monthly?", subtitle: "This helps us find the right IUL structure for your goals", field: "iul_investment", type: "select", options: ["$100 - $250", "$250 - $500", "$500 - $1,000", "$1,000+"] };
+const iulStep = { title: "How much are you willing to contribute monthly?", subtitle: "This helps us structure the right IUL plan for your cash growth goals", field: "iul_contribution", type: "select", options: ["Minimum ($100/mo)", "$100 - $250/mo", "$250 - $500/mo", "$500 - $999/mo", "$1,000+/mo"] };
 
 const remainingSteps = [
   { title: "What is your date of birth?", subtitle: "This helps us find age-appropriate plans", field: "dob", type: "date", placeholder: "" },
