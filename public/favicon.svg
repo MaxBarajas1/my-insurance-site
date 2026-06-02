@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <path d="M256 16L48 96v160c0 132.29 89.95 246.7 208 280 118.05-33.3 208-147.71 208-280V96L256 16z" fill="#1a3a5c"/>
+  <path d="M256 48L80 116v140c0 114.69 76.8 213.6 176 244 99.2-30.4 176-129.31 176-244V116L256 48z" fill="#1e4a72"/>
+  <path d="M256 80L112 136v120c0 97.1 63.65 180.5 144 208 80.35-27.5 144-110.9 144-208V136L256 80z" fill="#1a3a5c"/>
+  <text x="256" y="310" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="140" fill="#f0c040">YFP</text>
+</svg>
