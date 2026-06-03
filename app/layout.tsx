@@ -20,6 +20,13 @@ export const metadata: Metadata = {
     shortcut: "/favicon.ico",
     apple: "/icon.png",
   },
+  openGraph: {
+    title: "Your Future Protection | Life Insurance You Can Trust",
+    description: "Get affordable life insurance quotes for truckers, veterans, families, and homeowners. Mortgage protection, whole life, final expense, and IUL plans available.",
+    url: "https://www.yourfutureprotection.com",
+    siteName: "Your Future Protection",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
