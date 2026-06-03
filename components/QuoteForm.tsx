@@ -114,7 +114,7 @@ export default function QuoteForm() {
         </button>
       </div>
 
-      <p className="text-center text-xs text-gray-400 mt-4">By submitting, you agree to be contacted by a licensed insurance agent regarding life insurance options.</p>
+      <p className="text-center text-xs text-gray-400 mt-4">By clicking &quot;{step === steps.length - 1 ? "See My Options" : "Continue"}&quot;, you consent to receive calls, texts, and emails from Your Future Protection and its licensed agents regarding life insurance options at the number and email you provided. This may include automated dialing systems or prerecorded messages. Consent is not a condition of purchase. You may opt out at any time by replying STOP or contacting yfpsupport@gmail.com. <a href="/privacy" style={{textDecoration: "underline"}}>Privacy Policy</a> | <a href="/terms" style={{textDecoration: "underline"}}>Terms</a></p>
     </div>
   );
 }

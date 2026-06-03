@@ -20,7 +20,7 @@ export default function TermsPage() {
         <p className="mb-6">Nothing on this website constitutes an offer, solicitation, or agreement to provide insurance. Coverage availability, pricing, and eligibility vary by state, carrier, and individual circumstances. Submitting a quote request does not guarantee coverage or any specific rate.</p>
 
         <h2 className="text-lg font-bold text-[#1a3a5c] mb-3">Consent to Contact</h2>
-        <p className="mb-6">By submitting your information through our quote form, you consent to be contacted by a licensed insurance agent affiliated with Your Future Protection by phone, email, or text message regarding life insurance options. This may include the use of automated dialing systems or prerecorded messages. You understand that your consent is not a condition of purchasing any product or service. You may revoke your consent at any time by contacting us at yfpsupport@gmail.com or by replying STOP to any text message.</p>
+        <p className="mb-6">By submitting your information through our quote form, you provide your prior express written consent to be contacted by Your Future Protection and its affiliated licensed insurance agents by phone, email, or text message regarding life insurance options. This contact may include the use of automated telephone dialing systems, prerecorded or artificial voice messages, or SMS text messages, delivered to the phone number and email address you provided. You understand and agree that your consent is not a condition of purchasing any insurance product or service. You may revoke your consent at any time by replying STOP to any text message, by emailing yfpsupport@gmail.com, or by calling (917) 270-3167. Opt-out requests will be honored within 10 business days.</p>
 
         <h2 className="text-lg font-bold text-[#1a3a5c] mb-3">Accuracy of Information</h2>
         <p className="mb-6">While we strive to provide accurate and up-to-date information, we make no warranties or representations about the completeness, accuracy, or reliability of any content on this website. Insurance products, rates, and availability are subject to change without notice.</p>
@@ -36,6 +36,9 @@ export default function TermsPage() {
 
         <h2 className="text-lg font-bold text-[#1a3a5c] mb-3">Intellectual Property</h2>
         <p className="mb-6">All content on this website, including text, graphics, logos, and design, is the property of Your Future Protection and is protected by applicable copyright and trademark laws. You may not reproduce, distribute, or use any content without prior written permission.</p>
+
+        <h2 className="text-lg font-bold text-[#1a3a5c] mb-3">Governing Law</h2>
+        <p className="mb-6">These Terms and Conditions shall be governed by and construed in accordance with the laws of the State of Illinois, without regard to its conflict of law provisions. Any disputes arising under these terms shall be resolved in the courts of the State of Illinois.</p>
 
         <h2 className="text-lg font-bold text-[#1a3a5c] mb-3">Changes to Terms</h2>
         <p className="mb-6">We reserve the right to update these Terms and Conditions at any time. Changes will be posted on this page with an updated effective date. Continued use of the website after changes are posted constitutes your acceptance of the revised terms.</p>
